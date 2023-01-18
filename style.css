@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", san-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em;
+  border-radius: 16px;
+  margin: 50px 32vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container .info {
+  width: 100px;
+  height: auto;
+  text-align: center;
+  margin: 1em 0 0.5em;
+}
+.container .emoji {
+  font-size: 2rem;
+  padding: 0.5em 0;
+}
+.container .rating {
+  margin-bottom: 2em;
+}
+.container .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.container .rating .star {
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+.container .rating .star:hover path {
+  fill: #ffe766;
+}
+.container .rating .star:hover ~ .star path {
+  fill: #ffe766;
+}
+.container .rating .star path {
+  fill: #777;
+  width: 100%;
+  height: 100%;
+  stroke: none;
+}
+.container .rating .selected ~ .star path,
+.container .rating .selected path {
+  fill: #ffd700;
+}
+.slider {
+  width: 30vw;
+  margin-top: 30px;
+}
+.slider img {
+  width: 100%;
+}
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+.feedback-question {
+  color: blue;
+  cursor: pointer;
+}
+.feedback-input {
+  display: none;
+}
+.feedback-textarea {
+  width: 30vw;
+}
+.save {
+  margin-top: 30px;
+}
+.save-btn {
+  padding: 10px;
+  width: 10vw;
+  cursor: pointer;
+}
+
+.login-with-google-btn {
+  transition: background-color .3s, box-shadow .3s;
+  cursor: pointer;
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+  
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+.login-text {
+  margin: 30px 0;
+}
+
+#loading {
+  margin: 30px 0;
+}
+
+#login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  height: 64px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 64px;
+  align-items: center;
+}
+
+#user-info {
+  display: flex;
+}
+
+#sign-out {
+  color: blue;
+  margin-left: 50px;
+  cursor: pointer;
+}
